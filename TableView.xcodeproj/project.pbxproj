@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		682E131F1AC278800078A464 /* southpark_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 682E131E1AC278800078A464 /* southpark_1.jpg */; };
+		682E13241AC27DE10078A464 /* southpark_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 682E13231AC27DE10078A464 /* southpark_2.jpg */; };
 		6838E97C1AC1E50D0083F2AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838E97B1AC1E50D0083F2AD /* AppDelegate.swift */; };
 		6838E97E1AC1E50D0083F2AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838E97D1AC1E50D0083F2AD /* ViewController.swift */; };
 		6838E9811AC1E50D0083F2AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6838E97F1AC1E50D0083F2AD /* Main.storyboard */; };
 		6838E9831AC1E50D0083F2AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6838E9821AC1E50D0083F2AD /* Images.xcassets */; };
 		6838E9861AC1E50D0083F2AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6838E9841AC1E50D0083F2AD /* LaunchScreen.xib */; };
 		6838E9921AC1E50E0083F2AD /* TableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838E9911AC1E50E0083F2AD /* TableViewTests.swift */; };
+		6838E99D1AC1F98F0083F2AD /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838E99B1AC1F98F0083F2AD /* CustomTableViewCell.swift */; };
+		6838E99E1AC1F98F0083F2AD /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6838E99C1AC1F98F0083F2AD /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		682E131E1AC278800078A464 /* southpark_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = southpark_1.jpg; path = ../../southpark_1.jpg; sourceTree = "<group>"; };
+		682E13201AC27A6C0078A464 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		682E13231AC27DE10078A464 /* southpark_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = southpark_2.jpg; path = ../../southpark_2.jpg; sourceTree = "<group>"; };
 		6838E9761AC1E50D0083F2AD /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6838E97A1AC1E50D0083F2AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6838E97B1AC1E50D0083F2AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +43,8 @@
 		6838E98B1AC1E50E0083F2AD /* TableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6838E9901AC1E50E0083F2AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6838E9911AC1E50E0083F2AD /* TableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTests.swift; sourceTree = "<group>"; };
+		6838E99B1AC1F98F0083F2AD /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		6838E99C1AC1F98F0083F2AD /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +86,17 @@
 		6838E9781AC1E50D0083F2AD /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				682E13231AC27DE10078A464 /* southpark_2.jpg */,
+				682E131E1AC278800078A464 /* southpark_1.jpg */,
 				6838E97B1AC1E50D0083F2AD /* AppDelegate.swift */,
 				6838E97D1AC1E50D0083F2AD /* ViewController.swift */,
 				6838E97F1AC1E50D0083F2AD /* Main.storyboard */,
 				6838E9821AC1E50D0083F2AD /* Images.xcassets */,
 				6838E9841AC1E50D0083F2AD /* LaunchScreen.xib */,
 				6838E9791AC1E50D0083F2AD /* Supporting Files */,
+				6838E99B1AC1F98F0083F2AD /* CustomTableViewCell.swift */,
+				6838E99C1AC1F98F0083F2AD /* CustomTableViewCell.xib */,
+				682E13201AC27A6C0078A464 /* MyPlayground.playground */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -161,6 +175,7 @@
 				TargetAttributes = {
 					6838E9751AC1E50D0083F2AD = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 83W9WFRRMR;
 					};
 					6838E98A1AC1E50E0083F2AD = {
 						CreatedOnToolsVersion = 6.2;
@@ -192,8 +207,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				682E13241AC27DE10078A464 /* southpark_2.jpg in Resources */,
+				682E131F1AC278800078A464 /* southpark_1.jpg in Resources */,
 				6838E9811AC1E50D0083F2AD /* Main.storyboard in Resources */,
 				6838E9861AC1E50D0083F2AD /* LaunchScreen.xib in Resources */,
+				6838E99E1AC1F98F0083F2AD /* CustomTableViewCell.xib in Resources */,
 				6838E9831AC1E50D0083F2AD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6838E99D1AC1F98F0083F2AD /* CustomTableViewCell.swift in Sources */,
 				6838E97E1AC1E50D0083F2AD /* ViewController.swift in Sources */,
 				6838E97C1AC1E50D0083F2AD /* AppDelegate.swift in Sources */,
 			);
@@ -407,6 +426,7 @@
 				6838E9971AC1E50E0083F2AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6838E9981AC1E50E0083F2AD /* Build configuration list for PBXNativeTarget "TableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +435,7 @@
 				6838E99A1AC1E50E0083F2AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

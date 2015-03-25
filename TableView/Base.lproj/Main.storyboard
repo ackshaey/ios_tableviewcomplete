@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WJQ-Zx-avZ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Awesome Table-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,61 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="m1f-zG-tdz">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="RCB-i3-epC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m1f-zG-tdz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ToL-1s-hwB"/>
+                            <constraint firstItem="m1f-zG-tdz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cDl-HJ-DBD"/>
+                            <constraint firstAttribute="trailing" secondItem="m1f-zG-tdz" secondAttribute="trailing" id="fK7-Fx-z4V"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m1f-zG-tdz" secondAttribute="bottom" id="sQo-tS-oJb"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Awesome Table" id="j64-HM-7vC">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="KnS-6N-G1B">
+                            <connections>
+                                <action selector="btnCancel:" destination="BYZ-38-t0r" id="C32-rA-IGZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="MDX-pE-4mI">
+                            <connections>
+                                <action selector="btnEdit:" destination="BYZ-38-t0r" id="pQo-8M-M2a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="navTableItem" destination="j64-HM-7vC" id="f2S-ua-Cxl"/>
+                        <outlet property="tableView" destination="m1f-zG-tdz" id="SX4-FB-0Tu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1171" y="181"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ahP-Vj-3QP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WJQ-Zx-avZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JKC-Ug-b9O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pBj-K2-9Bz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y5O-mu-KEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="-512"/>
         </scene>
     </scenes>
 </document>
